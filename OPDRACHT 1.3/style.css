@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: purple;
+}
+
+ul li:first-child {
+    background-color: rgb(217, 217, 252);
+}
+
+ul li:last-child {
+    background-color: aliceblue;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid lightblue;
+    padding: 8px;
+    text-align: left;
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(193, 205, 233);
+}
+
+.exclude {
+    color: rgb(167, 167, 249);
+}
+
+p:not(.exclude),
+h2:not(.exclude),
+div:not(.exclude) {
+    color: #3498db;
+    font-weight: bold;
+}
+
+input[type="checkbox"]:checked {
+    background-color: lightblue;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+}
+
+section:target {
+    background-color: #c0d4ff;
+}
+
+ input:focus {
+    box-shadow: 0 0 5px #3498db;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+}
+
+section:target {
+    background-color: #e0e0e0;
+}
+
+ input:focus {
+    box-shadow: 0 0 5px #3498db;
+}

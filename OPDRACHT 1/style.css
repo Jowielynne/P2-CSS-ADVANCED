@@ -1,5 +1,19 @@
+:root {
+    --status: blue;
+    --background: rgb(186, 201, 219);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: var(--background);
+}
+ 
+.card__title {
+    color: var(--status);
+}
+    
