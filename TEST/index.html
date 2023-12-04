@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	...
-	<link href="./prism.css" rel="stylesheet" />
+    <link href="./prism.css" rel="stylesheet" />
 </head>
+
 <body>
-	...
-	<script src="prism.js"></script>
+
+    <pre><code class="language-css">
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    p::before {
+        content: "before";
+    }
+    
+    p::after {
+        content: "after";
+    }
+    
+</code></pre>
+
+    <script src="prism.js"></script>
 </body>
+
 </html>
