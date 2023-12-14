@@ -1,0 +1,558 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Hacked;
+    font-weight: normal;
+    color: white;
+}
+
+p {
+    font-family: OCRA;
+}
+
+/* FONTS */
+@font-face {
+    font-family: Hacked;
+    src: url(./fonts/HACKED.ttf);
+}
+
+@font-face {
+    font-family: Montse;
+    src: url(./fonts/montserrat.bold.ttf);
+}
+
+@font-face {
+    font-family: OCRA;
+    src: url(./fonts/OCRAEXT.TTF);
+}
+
+
+
+/* NAVBAR */
+nav {
+    width: 100%;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.171);
+    border-top: 1px solid rgba(255, 255, 255, 0.171);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+nav li {
+    font-size: 23px;
+    padding-left: 5px;
+    padding-right: 20px;
+}
+
+nav a {
+    color: white;
+    transition: 0.4s ease-in-out;
+    text-decoration: none;
+}
+
+nav a:hover {
+    transition: 0.4s ease-in-out;
+    filter: drop-shadow(0px 0px 10px rgb(255, 255, 255));
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+nav img {
+    margin-left: 40px;
+    width: 60px;
+}
+
+/* BUTTON */
+.button {
+    display: flex;
+    position: absolute;
+    right: 100px;
+    margin-top: 130px;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.button a {
+    color: white;
+    transition: 0.4s ease-in-out;
+    text-decoration: none;
+}
+
+.button a:hover {
+    transition: 0.4s ease-in-out;
+    filter: drop-shadow(-0.2em 1px 0px rgb(117, 86, 57));
+    padding-right: 20px;
+}
+
+/* INDEX.HTML, HOMEPAGE. */
+.FNAF {
+    min-height: 100vh;
+    background-image: url(./img/FNAF.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.FNAF h1 {
+    margin-top: 60px;
+    font-size: 70px;
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.438));
+}
+
+.FNAF h1,
+h2 {
+    line-height: 0.9;
+    margin-left: 40px;
+}
+
+.FNAF h2 {
+    position: absolute;
+    left: 0;
+}
+
+.FNAF p {
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+/* HOMEPAGE, GAMEBOXES. */
+.gameboxes {
+    display: flex;
+    position: absolute;
+    right: 40px;
+    top: 540px;
+    filter: drop-shadow(-0.6em 10px 0px rgb(60, 44, 29));
+}
+
+.gameboxes img {
+    clip-path: polygon(0 0, 85% 0, 100% 100%, 14% 100%);
+    display: inline;
+    height: 160px;
+}
+
+.gameboxes a {
+    transition: 0.4s ease-in-out;
+}
+
+.gameboxes a:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0px 0px 10px rgb(154, 115, 85));
+}
+
+/* SCOTT */
+.scottc {
+    border: 1px solid rgba(255, 255, 255, 0.237);
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url(./img/revbg.png);
+    background-position: center;
+}
+
+.scottc h1 {
+    margin-top: 40px;
+    font-size: 70px;
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.438));
+}
+
+.scottc h1,
+h2 {
+    line-height: 0.9;
+    margin-left: 40px;
+    text-align: center;
+}
+
+.scottc p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.scott {
+    display: block;
+    margin: 10px auto 0px auto;
+}
+
+/* CHARACTERS. */
+.charfnaf1 {
+    border: 1px solid rgba(255, 255, 255, 0.237);
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url(./img/revbg.png);
+    background-position: center;
+}
+
+.charfnaf1 h1 {
+    margin-top: 40px;
+    font-size: 70px;
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.438));
+}
+
+.charfnaf1 h1,
+h2 {
+    line-height: 0.9;
+    margin-left: 40px;
+}
+
+.charfnaf1 h2 {
+    position: absolute;
+    left: 5px;
+    text-align: left;
+}
+
+.quotes {
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size: 12px;
+}
+
+/* MICHEAL */
+.micheal,
+.william {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgba(255, 255, 255, 0.308);
+    background-image: url(./img/mikebg.png);
+    opacity: 0.9;
+    clip-path: polygon(0 0, 90% 0, 100% 10%, 100% 80%, 100% 100%, 10% 100%, 0 90%, 0% 20%);
+}
+
+.micheal h2 {
+    margin-top: 40px;
+    margin-left: 215px;
+}
+
+.william h2 {
+    margin-top: 40px;
+    margin-left: 215px;
+}
+
+.micheal p {
+    margin-top: 70px;
+    margin-left: 50px;
+}
+
+.william p {
+    margin-top: 70px;
+}
+
+.micheal,
+.william img {
+    height: 250px;
+    opacity: 10;
+}
+
+
+/* MORE GAMES PAGE. */
+.GAMES {
+    border: 1px solid rgba(255, 255, 255, 0.237);
+    min-height: 100vh;
+    background-image: url(./img/westhall.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.GAMES h1 {
+    margin-top: 60px;
+    font-size: 70px;
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.438));
+    margin-left: 40px
+}
+
+.GAMES h2 {
+    position: absolute;
+    margin-left: 40px;
+}
+
+.GAMES h1,
+h2 {
+    line-height: 0.9;
+}
+
+.GAMES p {
+    margin: 25px 0px 0px 40px;
+    font-size: 12px;
+}
+
+.games {
+    display: flex;
+    flex-direction: column;
+    filter: drop-shadow(-0.6em 10px 0px rgb(36, 36, 36));
+}
+
+.games img {
+    clip-path: polygon(0 0, 85% 0, 100% 100%, 14% 100%);
+    display: inline;
+    height: 160px;
+    margin: 70px 0px 0px 40px;
+}
+
+.fnafgame {
+    display: flex;
+}
+
+.fnafgame h3 {
+    font-style: italic;
+    font-size: 25px;
+    margin: 70px 0px 0px 30px;
+}
+
+.fnafgame p {
+    margin: 95px 0px 0px 10px;
+    position: absolute;
+    left: 344px;
+    font-size: 15px;
+    line-height: 1.2;
+}
+
+.games a {
+    transition: 0.4s ease-in-out;
+}
+
+.games a:hover {
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 10px rgb(255, 255, 255));
+    padding-left: 40px;
+}
+
+/* REVIEWS PAGE. */
+.REVIEW {
+    border: 1px solid rgba(255, 255, 255, 0.237);
+    min-height: 100vh;
+    background-position: center;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url(./img/wallpaperflare.com_wallpaper\ \(4\).jpg);
+    background-position: center;
+}
+
+.REVIEW h1 {
+    margin-top: 40px;
+    font-size: 70px;
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.438));
+}
+
+.REVIEW h1,
+h2 {
+    line-height: 0.9;
+    margin-left: 40px;
+}
+
+.REVIEW h2 {
+    position: absolute;
+    left: 5px;
+    text-align: left;
+}
+
+.checked {
+    margin-top: 12px;
+    color: rgb(225, 212, 124);
+}
+
+.card_review {
+    display: flex;
+    filter: drop-shadow(-0.2em 4px 0px rgb(60, 44, 29));
+    background-color: #a3a3a320;
+    clip-path: polygon(0 0, 87% 0, 100% 13%, 100% 100%, 87% 100%, 13% 100%, 0 87%, 0 13%);
+    margin: 50px 40px 0px 40px;
+    padding: 30px;
+}
+
+.card_name {
+    font-size: 20px;
+}
+
+.card_review img {
+    height: 90px;
+    margin-right: 10px;
+}
+
+/* CONTACT PAGE. */
+.CONTACT {
+    border: 1px solid rgba(255, 255, 255, 0.237);
+    min-height: 100vh;
+    background-image: url(./img/wallpaperflare.com_wallpaper\ \(2\).jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.CONTACT h1 {
+    margin-top: 70px;
+    font-size: 70px;
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.438));
+}
+
+.CONTACT h1,
+h2 {
+    line-height: 0.9;
+    text-align: center;
+}
+
+.CONTACT p {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.contactform {
+    max-width: 800px;
+    background: #ffffff48;
+    margin: 50px auto;
+    box-sizing: border-box;
+    padding: 40px;
+    clip-path: polygon(0% 15%, 0 0, 15% 0%, 90% 0, 96% 6%, 100% 11%, 100% 85%, 100% 100%, 85% 100%, 11% 100%, 5% 94%, 0 88%);
+}
+
+.input,
+.msg .area {
+    color: black;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: 2px solid #e9eaea;
+    font-size: 17px;
+    outline: none;
+    font-family: OCRA;
+    font-weight: bold
+}
+
+.login .input {
+    width: 48%;
+    float: left;
+    margin-right: 4%;
+}
+
+.login .input:last-child {
+    margin-right: 0;
+}
+
+.msg .area {
+    height: 200px;
+}
+
+.btn {
+    width: 250px;
+    background: rgba(181, 161, 71, 0.559);
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 auto;
+    color: #fff;
+    cursor: pointer;
+    clip-path: polygon(0% 15%, 0 0, 15% 0%, 90% 0, 96% 6%, 100% 11%, 100% 85%, 100% 100%, 85% 100%, 11% 100%, 5% 94%, 0 88%);
+}
+
+.input:focus,
+.msg .area:focus {
+    border: 2px solid #000000;
+}
+
+::-webkit-input-placeholder {
+    font-family: Hacked;
+}
+
+/* PHONE */
+@media screen and (max-width: 576px) {
+
+    /* INDEX */
+    nav {
+        width: 100%;
+        height: 65px;
+    }
+
+    nav img {
+        width: 40px;
+
+    }
+
+    nav li {
+        font-size: 18px;
+        padding-left: 7px;
+        padding-right: 10px;
+    }
+
+    /* SCOTT CAWTHON */
+    .scottc h1 {
+        font-size: 40px;
+    }
+
+    .scottc p {
+        font-size: 13px;
+    }
+
+    .scott {
+        width: 490px;
+    }
+
+
+    /* HOME */
+    .FNAF h1 {
+        font-size: 50px;
+    }
+
+    .FNAF p {
+        font-size: 15px;
+    }
+
+    .button {
+        position: absolute;
+        top: 0;
+        margin-top: 500px;
+        font-size: 30px;
+    }
+
+    .gameboxes img {
+        height: 90px;
+    }
+
+    /* CHARACTERS. */
+    .characters {
+        padding-bottom: 20px;
+    }
+
+    .quotes {
+        padding-top: 20px;
+    }
+
+    /* GAMES */
+    .GAMES p {
+        margin-top: 45px;
+        text-align: center;
+    }
+
+    .games img {
+        height: 120px;
+    }
+
+    .games h3 {
+        margin-bottom: 130px;
+    }
+
+    .games p {
+        position: absolute;
+        left: 0;
+        text-align: left;
+        margin: 97px 0px 0px 270px;
+        font-size: 8px;
+        width: 290px;
+    }
+
+    /* CONTACT PAGE */
+    .contactform {
+        max-width: 500px;
+    }
+}
