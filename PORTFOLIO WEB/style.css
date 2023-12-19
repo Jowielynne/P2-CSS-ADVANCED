@@ -3,14 +3,25 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
-    font-family: Volianchy;
+    font-family: Poppins;
     font-weight: normal;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: normal;
+    font-family: Bioscape;
 }
 
 /* FONTS */
 @font-face {
-    font-family: Volianchy;
-    src: url(./fonts//Volianchy.otf);
+    font-family: Poppins;
+    src: url(./fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Bioscape;
+    src: url(./fonts/Biospace.ttf.ttf);
 }
 
 /* NAVBAR, TOPNAV. */
@@ -80,7 +91,6 @@ nav a:hover {
 
 .home__description {
     font-size: 14px;
-    letter-spacing: 1px;
 }
 
 .home__container__images {
@@ -90,8 +100,8 @@ nav a:hover {
 }
 
 .home__container__images img {
-    height: 350px;
-    padding: 10px;
+    height: 370px;
+    padding: 30px;
     border-radius: 60px 0px 60px 0px;
     filter: drop-shadow(-2px 2px 0px rgb(111, 117, 166));
 }
@@ -116,7 +126,6 @@ nav a:hover {
 .about__title {
     margin-top: 50px;
     text-align: center;
-    font-size: 40px;
 }
 
 .about__imgtext__box {
@@ -129,7 +138,62 @@ nav a:hover {
 }
 
 .about__imgtext__box img {
-    margin-left: 40px;
+    margin: 10px 0px 0px 40px;
     height: 350px;
     filter: drop-shadow(-2px 2px 0px rgb(111, 117, 166));
+}
+
+/* KNOWLDEGE PAGE */
+.knowledge__page {
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url(./img/page1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* PROGRAM LANGUAGES */
+.program__page {
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url(./img/page1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* PROJECT */
+.projects__page {
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url(./img/page1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* SOCIALS */
+.socials__page {
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url(./img/page1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* CONTACT */
+.contact__page {
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url(./img/page1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
