@@ -5,9 +5,94 @@
 }
 
 p::before {
-    content: "before";
+    content: "🔹";
 }
 
 p::after {
-    content: "after";
+    content: "🔹";
+}
+
+
+li::before {
+    content: "🔹 ";
+}
+
+
+h1::before {
+    content: "🔹 ";
+}
+
+h2::before {
+    content: "🔹 ";
+}
+
+h3::before {
+    content: "🔹 ";
+}
+
+button::before {
+    content: "🔹 ";
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+button:hover::before {
+    opacity: 1;
+}
+
+.badge::before {
+    content: "🔹 ";
+    margin-right: 5px;
+}
+
+button::before {
+    content: "🔹";
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+button:hover::before {
+    opacity: 1;
+}
+
+.badge::before {
+    content: "🔹";
+    margin-right: 5px;
+}
+
+.custom-button {
+    position: relative;
+    padding: 10px 20px;
+    background-color: #f01212;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+
+section {
+    margin-top: 40px;
+    min-height: 10vh;
+    position: relative;
+    background-color: #e6e6e6;
+    margin-bottom: 20px;
+}
+
+section::before,
+section::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #000000;
+}
+
+section::before {
+    top: 0;
+    left: 0;
+}
+
+section::after {
+    top: 0;
+    right: 0;
 }

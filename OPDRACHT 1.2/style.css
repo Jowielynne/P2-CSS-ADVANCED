@@ -1,0 +1,42 @@
+:root {
+    --background-color: rgb(102, 100, 100);
+    --h1-color: #3498db;
+    --button-padding: 10px 20px;
+    --font-family: Arial, sans-serif;
+    --a-color: rgb(5, 255, 5);
+    --button-backgroundcolor: #2ecc71;
+    --button-color: #fff;
+    --h1-margin-bottom: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+    color: #000000;
+    line-height: 1.6;
+}
+
+h1 {
+    color: var(--h1-color);
+    font-size: 24px;
+    margin-bottom: var(--h1-margin-bottom);
+}
+
+a {
+    color: var(--a-color);
+    text-decoration: none;
+}
+
+button {
+    background-color: var(--button-backgroundcolor);
+    color: var(--button-color);
+    padding: var(--button-padding);
+    border: none;
+    cursor: pointer;
+}
